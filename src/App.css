@@ -43,6 +43,10 @@ a:hover {
   text-align: center;
 }
 
+.u-margin-top_small {
+  margin-top: 1rem;
+}
+
 /*** 3.0 - Typography ***/
 h1 {
   font-family: var(--bd-font-header-family);

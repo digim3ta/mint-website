@@ -3,7 +3,10 @@ body {
   font-family: var(--bd-font-body-family);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);
+  background-image: url("img/bg-foreground.png"), linear-gradient(to top, #f43b47 0%, #453a94 100%);
+  background-position: bottom, top;
+  background-repeat: repeat-x;
+  background-size: 500px, contain;
   color: #FFFFFF;
 }
 

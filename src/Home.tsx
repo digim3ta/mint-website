@@ -172,10 +172,10 @@ const Home = (props: HomeProps) => {
       <nav>
         <div className="container">
           <div id="brand">
-            <div>Boryoku Dragons</div>
+            <div>Boryoku DragonZ</div>
             <ul id="social">
-              <li><a href="https://discord.com"><img src="../discord.svg" alt="Discord" /></a></li>
-              <li><a href="https://twitter.com"><img src="../twitter.svg" alt="Twitter" /></a></li>
+              <li><a href="https://discord.gg/hxz74qWSRp" target="_blank" rel="noreferrer"><img src="../discord.svg" alt="Discord" /></a></li>
+              <li><a href="https://twitter.com/boryokudragonz" target="_blank" rel="noreferrer"><img src="../twitter.svg" alt="Twitter" /></a></li>
             </ul>
           </div>
         </div>
@@ -183,20 +183,20 @@ const Home = (props: HomeProps) => {
       <section id="mainContent">
         <div className="container u-text-align_center">
           <img src="../boryoku-dragon.png" className="nft" alt="Boryoku Dragon" />
-          <h1>Boryoku Dragons</h1>
+          <h1>Boryoku DragonZ</h1>
           <p>Loreum ipsum is simply dummy text of the typesetting industry.</p>
           
           {wallet && (
-            <p>Wallet {shortenAddress(wallet.publicKey.toBase58() || "")}</p>
+            <p className="u-margin-top_small">Wallet {shortenAddress(wallet.publicKey.toBase58() || "")}</p>
           )}
 
           {wallet && <p>Balance: {(balance || 0).toLocaleString()} SOL</p>}
 
-          {wallet && <p>Total Available: {itemsAvailable}</p>}
+          {/* {wallet && <p>Total Available: {itemsAvailable}</p>}
 
           {wallet && <p>Redeemed: {itemsRedeemed}</p>}
 
-          {wallet && <p>Remaining: {itemsRemaining}</p>}
+          {wallet && <p>Remaining: {itemsRemaining}</p>} */}
 
           <MintContainer>
             {!wallet ? (
@@ -242,7 +242,7 @@ const Home = (props: HomeProps) => {
         </div>
       </section>
       <footer>
-        <div className="container u-text-align_center">Site design by <a href="https://randy.digital" target="_blank" rel="noreferrer">randy.digital</a>.</div>
+        <div className="container u-text-align_center">&copy; 2021 Boryoku DragonZ.</div>
       </footer>
     </main>
   );
