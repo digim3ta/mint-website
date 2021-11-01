@@ -172,7 +172,7 @@ const Home = (props: HomeProps) => {
       <nav>
         <div className="container">
           <div id="brand">
-            <div>Boryoku DragonZ</div>
+            <div><img src="../boryoku-dragons-logo.png" className="logo" alt="Boryoku Dragon" /></div>
             <ul id="social">
               <li><a href="https://discord.gg/hxz74qWSRp" target="_blank" rel="noreferrer"><img src="../discord.svg" alt="Discord" /></a></li>
               <li><a href="https://twitter.com/boryokudragonz" target="_blank" rel="noreferrer"><img src="../twitter.svg" alt="Twitter" /></a></li>
@@ -182,9 +182,14 @@ const Home = (props: HomeProps) => {
       </nav>
       <section id="mainContent">
         <div className="container u-text-align_center">
-          <img src="../boryoku-dragon.png" className="nft" alt="Boryoku Dragon" />
-          <h1>Boryoku DragonZ</h1>
-          <p>Loreum ipsum is simply dummy text of the typesetting industry.</p>
+          <img src="../boryoku-dragons-logo.png" className="logo u-margin-bottom_large" alt="Boryoku Dragon" />
+          <div>
+            <p className="u-margin-bottom_small">Bōryoku Dragonz are an exclusive collection of 1,111 Dragon NFTs on Solana, backed by a top team of NFT collectors, designers, community builders, and artists.</p>
+            <p className="u-margin-bottom_small">The project brings a fresh design to Solana, with daily token airdrops, a breeding game with token burning mechanics, and a multi-chain community that completely transcends a simple PFP offering.</p>
+            <p className="u-margin-bottom_small">Bōryoku Dragonz bridge the gap between high end 3D models and low resolution pixel art, featuring reknown pixel artists Yes I Do (<a href="https://twitter.com/Yes_I_Do_pixels" target="_blank" rel="noreferrer">@Yes_I_Do_pixels</a>) and Pixeldoshi (<a href="https://twitter.com/pixeldoshi" target="_blank" rel="noreferrer">@pixeldoshi</a>).</p>
+            <p className="u-margin-bottom_small">The team is committed to driving long term value for holders with a time horizon in years, not weeks or months, and have all the expertise to deliver on their vision, roadmap, and much more.</p>
+            <p className="u-margin-bottom_small">The Bōryoku Dragonz have arrived, and they are here to stay!</p>
+          </div>
           
           {wallet && (
             <p className="u-margin-top_small">Wallet {shortenAddress(wallet.publicKey.toBase58() || "")}</p>

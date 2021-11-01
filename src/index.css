@@ -21,6 +21,10 @@ code {
   justify-content: space-between;
 }
 
+#brand .logo {
+  max-width: 100px;
+}
+
 #social {
   list-style-type: none;
 }
@@ -42,6 +46,6 @@ code {
   padding: 2rem 0;
 }
 
-.nft {
-  max-width: 300px;
+.logo {
+  width: 400px;
 }
