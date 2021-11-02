@@ -3,7 +3,10 @@ body {
   font-family: var(--bd-font-body-family);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);
+  background-image: url("img/layer_1.png"), url("img/layer_2.png"), url("img/layer_3.png"), linear-gradient(to top, #f43b47 0%, #453a94 100%);
+  background-position: bottom;
+  background-repeat: repeat-x, repeat-x, no-repeat;
+  background-size: contain, contain, cover;
   color: #FFFFFF;
 }
 
@@ -16,6 +19,10 @@ code {
   align-items: center;
   display: flex;
   justify-content: space-between;
+}
+
+#brand .logo {
+  max-width: 100px;
 }
 
 #social {
@@ -39,6 +46,20 @@ code {
   padding: 2rem 0;
 }
 
-.nft {
-  max-width: 300px;
+.bg-layer {
+  /* background-color: rgba(66, 80, 173, 0.5); */
+  border-radius: 0.5rem;
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 2rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .bg-layer {
+    max-width: 100%;
+  }
+}
+
+.logo {
+  width: 300px;
 }

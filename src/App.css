@@ -39,8 +39,24 @@ a:hover {
 }
 
 /*** 2.0 - Utilities ***/
+.u-text-align_left{
+  text-align: left;
+}
+
 .u-text-align_center {
   text-align: center;
+}
+
+.u-margin-top_small {
+  margin-top: 1rem;
+}
+
+.u-margin-bottom_small {
+  margin-bottom: 1rem;
+}
+
+.u-margin-bottom_large {
+  margin-bottom: 3rem;
 }
 
 /*** 3.0 - Typography ***/
