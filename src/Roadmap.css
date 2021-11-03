@@ -40,9 +40,10 @@
     text-align: left;
 }
 
-#roadmap li span:first-of-type {
+#roadmap li span:first-child {
     background-color: purple;
     padding: 1rem;
+    min-width: 80px !important;
 }
 
 #roadmap li:nth-child(odd) span:last-of-type {
@@ -66,7 +67,11 @@
     background-color: rgba(0, 0, 0, 0.5);
     padding: 1rem;
     position: relative;
-    width: 398px;
+}
+
+#roadmap li:nth-child(odd) span:last-of-type,
+#roadmap li:nth-child(even) span:last-of-type {
+    width: 100%;
 }
 
 #roadmap li:nth-child(even) span:last-of-type::after {
@@ -84,12 +89,17 @@
         background-color: purple;
     }
 
+    #roadmap li span:first-child {
+        min-width: auto !important;
+    }
+
     #roadmap li:nth-child(even) {
         flex-direction: row-reverse;
     }
 
-    #roadmap li:nth-child(odd) span:last-of-type {
-        width: 398px;
+    #roadmap li:nth-child(odd) span:last-of-type,
+    #roadmap li:nth-child(even) span:last-of-type {
+        width: 398px !important;
     }
 
     #roadmap li:nth-child(odd) span:last-of-type::after {
