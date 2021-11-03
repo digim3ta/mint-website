@@ -3,10 +3,10 @@ body {
   font-family: var(--bd-font-body-family);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("img/layer_1.png"), url("img/layer_2.png"), url("img/layer_3.png"), linear-gradient(to top, #f43b47 0%, #453a94 100%);
+  background-image: url("img/layer_1.png"), url("img/layer_2.png"), url("img/layer_3.png"), linear-gradient(to top, #4250AD 100%, #f43b47 0%);
   background-position: bottom;
   background-repeat: repeat-x, repeat-x, no-repeat;
-  background-size: contain, contain, cover;
+  background-size: contain;
   color: #FFFFFF;
 }
 
@@ -23,6 +23,17 @@ code {
 
 #brand .logo {
   max-width: 100px;
+  filter: brightness(0) invert(1);
+}
+
+#nav a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#nav a:hover {
+  text-decoration: underline;
 }
 
 #social {
@@ -48,18 +59,29 @@ code {
 
 .bg-layer {
   /* background-color: rgba(66, 80, 173, 0.5); */
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 0.5rem;
   margin: 0 auto;
   max-width: 100%;
   padding: 2rem;
 }
 
+.logo {
+  width: 100%;
+}
+
 @media only screen and (min-width: 768px) {
   .bg-layer {
     max-width: 100%;
   }
+
+  .logo {
+    width: 400px;
+  }
 }
 
-.logo {
-  width: 300px;
+
+
+.ani-gif {
+  width: 200px;
 }

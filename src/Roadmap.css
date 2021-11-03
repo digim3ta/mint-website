@@ -1,0 +1,107 @@
+.roadmap-container {
+    margin-top: 6rem;
+}
+
+#roadmap {
+    padding: 0;
+    position: relative;
+}
+
+#roadmap::after {
+    content: '';
+    width: 2px;
+    height: 100%;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: -1;
+}
+
+#roadmap li {
+    align-items: stretch;
+    display: flex;
+    width: 100%;
+}
+
+#roadmap li:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+#roadmap li:nth-child(even) {
+    flex-direction: inherit;
+}
+
+/* #roadmap li:nth-child(odd) span:not(:last-child) {
+    margin-right: 1rem;
+} */
+
+#roadmap li:nth-child(even) span:not(:first-child) {
+    text-align: left;
+}
+
+#roadmap li span:first-of-type {
+    background-color: purple;
+    padding: 1rem;
+}
+
+#roadmap li:nth-child(odd) span:last-of-type {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    position: relative;
+    width: auto;
+}
+
+#roadmap li:nth-child(odd) span:last-of-type::after {
+    content: '';
+    width: 40px;
+    top: 50%;
+    left: 100%;
+    height: 2px;
+    background-color: transparent;
+    position: absolute;
+}
+
+#roadmap li:nth-child(even) span:last-of-type {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    position: relative;
+    width: 398px;
+}
+
+#roadmap li:nth-child(even) span:last-of-type::after {
+    content: '';
+    width: 39px;
+    top: 50%;
+    right: 100%;
+    height: 2px;
+    background-color: transparent;
+    position: absolute;
+}
+
+@media only screen and (min-width: 1300px) {
+    #roadmap::after {
+        background-color: purple;
+    }
+
+    #roadmap li:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    #roadmap li:nth-child(odd) span:last-of-type {
+        width: 398px;
+    }
+
+    #roadmap li:nth-child(odd) span:last-of-type::after {
+        background-color: purple;
+    }
+    
+
+    #roadmap li:nth-child(even) span:not(:first-child) {
+        text-align: right;
+    }
+
+    #roadmap li:nth-child(even) span:last-of-type::after {
+        background-color: purple;
+    }
+}
