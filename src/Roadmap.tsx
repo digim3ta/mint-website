@@ -24,7 +24,7 @@ const Roadmap = () => {
                 </li>
                 <li>
                     <span>Phase 4</span>
-                    <span>Auction of Legendary Dragons</span>
+                    <span>Auction of Legendary Dragonz</span>
                 </li>
                 <li>
                     <span>Phase 5</span>
@@ -32,7 +32,7 @@ const Roadmap = () => {
                 </li>
                 <li>
                     <span>Phase 6</span>
-                    <span>Baby Dragons come to life</span>
+                    <span>Baby Dragonz come to life</span>
                 </li>
             </ul>
         </div>
